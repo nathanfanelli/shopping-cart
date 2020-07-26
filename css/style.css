@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://secureservercdn.net/198.71.233.254/dd2.a4b.myftpupload.com/wp-content/uploads/2017/08/https-2F2Fs3-ap-southeast-2.amazonaws.com2Fvms-tv-images-prod2F20172F022F586222FPOKE_Pokemon_1920.jpg?time=1587665537');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    padding: 0!important;
+    margin: 0!important;
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.add-cart {
+    font-size: 1.5rem;
+    background-color: #999;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
