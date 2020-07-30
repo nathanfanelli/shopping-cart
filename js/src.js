@@ -29,13 +29,24 @@ let products = [
 
 for (i = 0; i < carts.length; i++) {
     carts[i].addEventListener('click', () => {
-        cartNumbers();
+        cartNumbers(products[i]);
     })
 }
 
-function cartNumbers() {
+function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem('cartNumbers');
+
+    if(productNumbers) {
+        document.querySelector('.cart span').textContent = productNumbers;
+    }
+}
+
+function cartNumbers(product) {
+    console.log("The product click is ", product);
+    let productNumbers = localStorage.getItem('cartNumbers');
+
     productNumbers = parseInt(productNumbers);
+
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
         document.querySelector('.cart span').textContent = productNumbers + 1;
@@ -44,3 +55,5 @@ function cartNumbers() {
         document.querySelector('.cart span').textContent = 1;
     }
 }
+
+onLoadCartNumbers();
